@@ -1,0 +1,6 @@
+module Pods_hustleApp_hustleAppTests {
+  umbrella header "Pods-hustleApp-hustleAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,89 @@
+import {StyleSheet, Dimensions} from 'react-native';
+import R from '../../res/R';
+const screenWidth = Dimensions.get('screen').width
+
+const Style = StyleSheet.create({
+
+    mainView:
+    {
+        flex:1, 
+        backgroundColor:R.colors.backgroundColor, 
+        marginHorizontal:R.fontSize.large
+    },
+    marketStatusText:
+    {
+        fontSize:R.fontSize.medium, 
+        color:R.colors.white
+    },
+    marketOpen:
+    {
+        fontSize:R.fontSize.UltraXLarge, 
+        color:R.colors.white, 
+        fontWeight:'600'
+    },
+    stockMarketMainView:
+    {
+        marginTop:R.fontSize.extraSmall, 
+        flex:1
+    },
+    stockMarketView:
+    {
+        backgroundColor:R.colors.buttonColor, 
+        alignItems:'center', 
+        justifyContent:'center', 
+        paddingVertical:R.fontSize.Size8
+    },
+    stockMarketText:
+    {
+        color:R.colors.white, 
+        fontSize:R.fontSize.large, 
+        fontWeight:'600'
+    },
+    HolidayTitleMainView:
+    {
+        backgroundColor:R.colors.buttonColor, 
+        justifyContent:'space-between', 
+        marginTop:R.fontSize.Size4, 
+        flexDirection:'row', 
+        height:R.fontSize.Size35
+    },
+    HolidayTitleView:
+    {
+        alignItems:'center', 
+        justifyContent:'center', 
+        flex:1, 
+        borderWidth:1, 
+        borderColor:R.colors.white
+    },
+    HolidayTitleText:
+    {
+        color:R.colors.white, 
+        fontSize:R.fontSize.small, 
+        fontWeight:'600'
+    },
+    HolidayValueMainView:
+    {
+        backgroundColor:R.colors.lightgreen, 
+        justifyContent:'space-between', 
+        marginTop:R.fontSize.Size4, 
+        flexDirection:'row',
+        height:R.fontSize.Size35
+    },
+    HolidayValueView:
+    {
+        alignItems:'center', 
+        justifyContent:'center', 
+        flex:1, 
+        borderWidth:0.5, 
+        borderColor:R.colors.placeholderTextColor
+    },
+    HolidayValueText:
+    {
+        color:R.colors.black, 
+        fontSize:R.fontSize.small, 
+        fontWeight:'600', 
+        textAlign:'center'
+    }
+})
+
+export default Style
